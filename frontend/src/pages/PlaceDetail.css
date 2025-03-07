@@ -1,0 +1,157 @@
+.place-detail {
+    margin: 6rem auto;
+    width: 90%;
+    max-width: 40rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 6px;
+    background: white;
+    overflow: hidden;
+  }
+  
+  .place-detail__image {
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+  }
+  
+  .place-detail__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .place-detail__info {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .place-detail__actions {
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #ccc;
+  }
+  
+  .center {
+    text-align: center;
+    margin-top: 6rem;
+  }
+  
+  .error-text {
+    color: red;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+  }
+  
+  .modal-content {
+    position: relative;
+    background: white;
+    border-radius: 6px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 30rem;
+    z-index: 20;
+    text-align: center;
+  }
+  
+  .modal-actions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .btn-danger {
+    background: #830000;
+    border-color: #830000;
+  }
+  
+  .btn-danger:hover,
+  .btn-danger:active {
+    background: #f34343;
+    border-color: #f34343;
+  }
+  
+  .btn-inverse {
+    background: transparent;
+    color: #ff0055;
+    border-color: #ff0055;
+  }
+  
+  .btn-inverse:hover,
+  .btn-inverse:active {
+    color: white;
+    background: #ff0055;
+  } 
+  .place-detail__map {
+    width: 100%;
+    height: 20rem;
+    margin: 1rem 0;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .place-detail__map {
+    width: 100%;
+    height: 20rem;
+    margin: 1rem 0;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .place-detail__map small {
+    display: block;
+    text-align: right;
+    margin-top: 0.5rem;
+  }
+  
+  .place-detail__map small a {
+    color: #ff0055;
+    text-decoration: none;
+  }
+  
+  .place-detail__map small a:hover,
+  .place-detail__map small a:active {
+    text-decoration: underline;
+  }
+  .place-detail__map {
+    width: 100%;
+    height: 20rem;
+    margin: 1rem 0;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .place-detail__map small {
+    display: block;
+    text-align: right;
+    margin-top: 0.5rem;
+  }
+  
+  .place-detail__map small a {
+    color: #ff0055;
+    text-decoration: none;
+  }
+  
+  .place-detail__map small a:hover,
+  .place-detail__map small a:active {
+    text-decoration: underline;
+  }

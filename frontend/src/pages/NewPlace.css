@@ -1,0 +1,148 @@
+.new-place-container {
+    width: 90%;
+    max-width: 40rem;
+    margin: 7rem auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 6px;
+    padding: 1rem;
+    background: white;
+  }
+  
+  .form-control {
+    margin: 1rem 0;
+  }
+  
+  .form-control label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-control input,
+  .form-control textarea {
+    display: block;
+    width: 100%;
+    font: inherit;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    padding: 0.15rem 0.25rem;
+  }
+  
+  .form-control input:focus,
+  .form-control textarea:focus {
+    outline: none;
+    background: #ebebeb;
+    border-color: #510077;
+  }
+  
+  .place-actions {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .place-actions button {
+    font: inherit;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #ff0055;
+    border-radius: 4px;
+    background: #ff0055;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .place-actions button:hover,
+  .place-actions button:active {
+    background: #ff4382;
+    border-color: #ff4382;
+  }
+  
+  .place-actions button:disabled,
+  .place-actions button:hover:disabled,
+  .place-actions button:active:disabled {
+    background: #ccc;
+    color: #979797;
+    border-color: #ccc;
+    cursor: not-allowed;
+  }
+  /* Add these styles to your NewPlace.css */
+
+.image-input-toggle {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.toggle-btn {
+  padding: 0.5rem 1rem;
+  background: #f8f8f8;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  flex: 1;
+}
+
+.toggle-btn.active {
+  background: #ff0055;
+  color: white;
+  border-color: #ff0055;
+}
+
+.toggle-btn:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.toggle-btn:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+.image-preview {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: #f8f8f8;
+  border-radius: 4px;
+}
+
+input[type="file"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  width: 100%;
+}
+.image-input-toggle {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.toggle-btn {
+  padding: 0.5rem 1rem;
+  background: #f8f8f8;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  flex: 1;
+}
+
+.toggle-btn.active {
+  background: #ff0055;
+  color: white;
+  border-color: #ff0055;
+}
+
+.toggle-btn:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.toggle-btn:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+.image-preview {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: #f8f8f8;
+  border-radius: 4px;
+}
+
+input[type="file"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  width: 100%;
+}

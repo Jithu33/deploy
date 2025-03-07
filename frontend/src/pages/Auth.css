@@ -1,0 +1,76 @@
+.auth-container {
+    width: 90%;
+    max-width: 25rem;
+    margin: 7rem auto;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 6px;
+    padding: 1rem;
+    background: white;
+  }
+  
+  .form-control {
+    margin: 1rem 0;
+    text-align: left;
+  }
+  
+  .form-control label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-control input {
+    display: block;
+    width: 100%;
+    font: inherit;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    padding: 0.15rem 0.25rem;
+  }
+  
+  .form-control input:focus {
+    outline: none;
+    background: #ebebeb;
+    border-color: #510077;
+  }
+  
+  .auth-actions {
+    margin-top: 2rem;
+  }
+  
+  .auth-actions button {
+    font: inherit;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #ff0055;
+    border-radius: 4px;
+    background: #ff0055;
+    color: white;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  
+  .auth-actions button:hover,
+  .auth-actions button:active {
+    background: #ff4382;
+    border-color: #ff4382;
+  }
+  
+  .auth-actions .switch-button {
+    background: transparent;
+    color: #ff0055;
+  }
+  
+  .auth-actions .switch-button:hover,
+  .auth-actions .switch-button:active {
+    color: white;
+    background: #ff0055;
+  }
+  .success-text {
+    color: green;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #e7f6e7;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
