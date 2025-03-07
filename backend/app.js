@@ -13,8 +13,20 @@ const uploadRoutes = require('./routes/upload-routes');
 
 const app = express();
 
+// Configure CORS
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'http://localhost:5000',
+    'https://myawesomeapp-5a9c7.web.app',
+    'https://myawesomeapp-5a9c7.firebaseapp.com',
+    'https://jithu33.github.io'
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
 // Middleware
-app.use(cors());
 app.use(express.json());
 
 // Serve static files from uploads folder
@@ -31,6 +43,19 @@ app.use((error, req, res, next) => {
   const message = error.message || 'An unknown error occurred!';
   res.status(status).json({ message: message });
 });
+
+// Serve static files in production
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../build')));
+  
+  app.get('*', (req, res, next) => {
+    // Skip API routes
+    if (req.path.startsWith('/api')) {
+      return next();
+    }
+    res.sendFile(path.join(__dirname, '../build', 'index.html'));
+  });
+}
 
 // Connect to MongoDB and start server
 const PORT = process.env.PORT || 5000;
