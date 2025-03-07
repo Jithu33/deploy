@@ -1,5 +1,5 @@
-const API_URL = 'http://localhost:5000/api';
-
+// const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://deploy-backend.onrender.com/api';
 const handleApiError = async (response) => {
   const data = await response.json();
   if (!response.ok) {
